@@ -3,6 +3,7 @@
 //  SimpleCalc
 //
 //  Created by Vincent Saluzzo on 29/03/2019.
+//  Updated by Mélissa Grangenois on 11/01/2020.
 //  Copyright © 2019 Vincent Saluzzo. All rights reserved.
 //
 
@@ -72,7 +73,27 @@ class ViewController: UIViewController {
             self.present(alertVC, animated: true, completion: nil)
         }
     }
-
+    
+    @IBAction func tappedMultiplicationButton(_ sender: UIButton) {
+        if canAddOperator {
+            textView.text.append(" x ")
+        } else {
+            let alertVC = UIAlertController(title: "Zéro!", message: "Un operateur est déja mis !", preferredStyle: .alert)
+            alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertVC, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func tappedDivisionButton(_ sender: UIButton) {
+        if canAddOperator {
+            textView.text.append(" / ")
+        } else {
+            let alertVC = UIAlertController(title: "Zéro!", message: "Un operateur est déja mis !", preferredStyle: .alert)
+            alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alertVC, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func tappedEqualButton(_ sender: UIButton) {
         guard expressionIsCorrect else {
             let alertVC = UIAlertController(title: "Zéro!", message: "Entrez une expression correcte !", preferredStyle: .alert)

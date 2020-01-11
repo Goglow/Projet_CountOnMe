@@ -163,7 +163,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tappedAdditionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="V0J-eg-vQK"/>
+                                            <action selector="tappedAdditionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="Hwj-ZZ-b1Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zr-HC-0N9">
@@ -174,7 +174,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tappedSubstractionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="KVX-AF-NVM"/>
+                                            <action selector="tappedSubstractionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="BAF-tO-h0v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKA-ah-SBa">
@@ -185,7 +185,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tappedSubstractionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="CLS-3g-PIR"/>
+                                            <action selector="tappedMultiplicationButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="Mrb-kl-p2P"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-Xk-P9Z">
@@ -196,7 +196,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tappedSubstractionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="z7L-Qh-W7n"/>
+                                            <action selector="tappedDivisionButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="c8b-Uo-Zzo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMj-Of-bCU">
@@ -207,7 +207,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tappedEqualButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="JgS-cl-T2a"/>
+                                            <action selector="tappedEqualButton:" destination="eqK-jh-KKu" eventType="touchUpInside" id="JNJ-yZ-wNj"/>
                                         </connections>
                                     </button>
                                 </subviews>
