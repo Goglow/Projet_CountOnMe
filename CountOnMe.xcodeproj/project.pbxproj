@@ -14,6 +14,7 @@
 		1FA43BDD224E569A00F565CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA43BDB224E569A00F565CB /* LaunchScreen.storyboard */; };
 		1FA43BE8224E569A00F565CB /* SimpleCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA43BE7224E569A00F565CB /* SimpleCalcTests.swift */; };
 		1FA43BF3224E569A00F565CB /* SimpleCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA43BF2224E569A00F565CB /* SimpleCalcUITests.swift */; };
+		966759C423CA58D30022514C /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966759C323CA58D30022514C /* Operation.swift */; };
 		96CBB22D23CA307C005DC017 /* Miama.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96CBB22C23CA307C005DC017 /* Miama.otf */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1FA43BEE224E569A00F565CB /* CountOnMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountOnMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA43BF2224E569A00F565CB /* SimpleCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalcUITests.swift; sourceTree = "<group>"; };
 		1FA43BF4224E569A00F565CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966759C323CA58D30022514C /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		96CBB22C23CA307C005DC017 /* Miama.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +101,7 @@
 		1FA43BD1224E569900F565CB /* CountOnMe */ = {
 			isa = PBXGroup;
 			children = (
-				966170F7238092DC006DA6B3 /* Model */,
+				966759C223CA58B70022514C /* Model */,
 				966170F82380933B006DA6B3 /* View */,
 				966170F923809343006DA6B3 /* Controller */,
 				966170FA2380934A006DA6B3 /* Supporting files */,
@@ -123,13 +125,6 @@
 				1FA43BF4224E569A00F565CB /* Info.plist */,
 			);
 			path = CountOnMeUITests;
-			sourceTree = "<group>";
-		};
-		966170F7238092DC006DA6B3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		966170F82380933B006DA6B3 /* View */ = {
@@ -158,6 +153,14 @@
 				1FA43BDE224E569A00F565CB /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		966759C223CA58B70022514C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				966759C323CA58D30022514C /* Operation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +297,7 @@
 			files = (
 				1FA43BD5224E569900F565CB /* ViewController.swift in Sources */,
 				1FA43BD3224E569900F565CB /* AppDelegate.swift in Sources */,
+				966759C423CA58D30022514C /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
