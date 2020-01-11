@@ -14,7 +14,7 @@
 		1FA43BDD224E569A00F565CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA43BDB224E569A00F565CB /* LaunchScreen.storyboard */; };
 		1FA43BE8224E569A00F565CB /* SimpleCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA43BE7224E569A00F565CB /* SimpleCalcTests.swift */; };
 		1FA43BF3224E569A00F565CB /* SimpleCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA43BF2224E569A00F565CB /* SimpleCalcUITests.swift */; };
-		96CBB22B23CA1AD9005DC017 /* Miama.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96CBB22A23CA1AD9005DC017 /* Miama.otf */; };
+		96CBB22D23CA307C005DC017 /* Miama.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96CBB22C23CA307C005DC017 /* Miama.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		1FA43BEE224E569A00F565CB /* CountOnMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountOnMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA43BF2224E569A00F565CB /* SimpleCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalcUITests.swift; sourceTree = "<group>"; };
 		1FA43BF4224E569A00F565CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96CBB22A23CA1AD9005DC017 /* Miama.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.otf; sourceTree = "<group>"; };
+		96CBB22C23CA307C005DC017 /* Miama.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +153,8 @@
 			children = (
 				1FA43BD2224E569900F565CB /* AppDelegate.swift */,
 				1FA43BD9224E569A00F565CB /* Assets.xcassets */,
+				96CBB22C23CA307C005DC017 /* Miama.otf */,
 				1FA43BDB224E569A00F565CB /* LaunchScreen.storyboard */,
-				96CBB22A23CA1AD9005DC017 /* Miama.otf */,
 				1FA43BDE224E569A00F565CB /* Info.plist */,
 			);
 			path = "Supporting files";
@@ -265,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA43BDD224E569A00F565CB /* LaunchScreen.storyboard in Resources */,
-				96CBB22B23CA1AD9005DC017 /* Miama.otf in Resources */,
+				96CBB22D23CA307C005DC017 /* Miama.otf in Resources */,
 				1FA43BDA224E569A00F565CB /* Assets.xcassets in Resources */,
 				1FA43BD8224E569900F565CB /* Main.storyboard in Resources */,
 			);
