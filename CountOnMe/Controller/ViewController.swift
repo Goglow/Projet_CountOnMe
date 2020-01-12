@@ -3,7 +3,7 @@
 //  SimpleCalc
 //
 //  Created by Vincent Saluzzo on 29/03/2019.
-//  Updated by Mélissa Grangenois on 11/01/2020.
+//  Updated by Waggle Glow on 11/01/2020.
 //  Copyright © 2019 Vincent Saluzzo. All rights reserved.
 //
 
@@ -13,13 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet var numberButtons: [UIButton]!
     
+    let operation = Operation()
+    
     var elements: [String] {
         return textView.text.split(separator: " ").map { "\($0)" }
     }
     
     // Error check computed variables
     var expressionIsCorrect: Bool {
-        return elements.last != "+" && elements.last != "-"
+        return elements.last != "+" && elements.last != "-" && elements.last != "x" && elements.last != "÷"
     }
     
     var expressionHaveEnoughElement: Bool {
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     var canAddOperator: Bool {
-        return elements.last != "+" && elements.last != "-"
+        return elements.last != "+" && elements.last != "-" && elements.last != "x" && elements.last != "÷"
     }
     
     var expressionHaveResult: Bool {
@@ -37,11 +39,10 @@ class ViewController: UIViewController {
     // View Life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    
     // View actions
+    // Enter the numbers
     @IBAction func tappedNumberButton(_ sender: UIButton) {
         guard let numberText = sender.title(for: .normal) else {
             return
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
         textView.text.append(numberText)
     }
     
+    // Take an addition
     @IBAction func tappedAdditionButton(_ sender: UIButton) {
         if canAddOperator {
             textView.text.append(" + ")
@@ -64,6 +66,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // Take a substraction
     @IBAction func tappedSubstractionButton(_ sender: UIButton) {
         if canAddOperator {
             textView.text.append(" - ")
@@ -74,6 +77,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // Take a multiplication
     @IBAction func tappedMultiplicationButton(_ sender: UIButton) {
         if canAddOperator {
             textView.text.append(" x ")
@@ -84,9 +88,10 @@ class ViewController: UIViewController {
         }
     }
     
+    // Take a division
     @IBAction func tappedDivisionButton(_ sender: UIButton) {
         if canAddOperator {
-            textView.text.append(" / ")
+            textView.text.append(" ÷ ")
         } else {
             let alertVC = UIAlertController(title: "Zero!", message: "An operator is already set!", preferredStyle: .alert)
             alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -94,6 +99,21 @@ class ViewController: UIViewController {
         }
     }
     
+    // Add a coma
+    @IBAction func tappedComaButton(_ sender: UIButton) {
+        
+    }
+    
+    
+    // Cancel the operation
+    @IBAction func tappedCancelButton(_ sender: UIButton) {
+        
+        
+    }
+    
+    
+    
+    // Enter the equal
     @IBAction func tappedEqualButton(_ sender: UIButton) {
         guard expressionIsCorrect else {
             let alertVC = UIAlertController(title: "Zero!", message: "Enter a correct expression!", preferredStyle: .alert)
@@ -106,6 +126,7 @@ class ViewController: UIViewController {
             alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             return self.present(alertVC, animated: true, completion: nil)
         }
+        
         
         // Create local copy of operations
         var operationsToReduce = elements
@@ -120,6 +141,8 @@ class ViewController: UIViewController {
             switch operand {
             case "+": result = left + right
             case "-": result = left - right
+            case "x": result = left * right
+            case "÷": result = left / right
             default: fatalError("Unknown operator!")
             }
             
